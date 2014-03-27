@@ -1,8 +1,7 @@
 <h1>Search for a garage sale by suburb</h1>
   
-<%= form_tag search_path, :method => :get do %>  
+<%= form_tag result_path, :method => :get do %>  
   <p>  
     <%= text_field_tag :search, params[:suburb] %>  
     <%= submit_tag "Search", :name => nil %>  
 <% end %>  
-

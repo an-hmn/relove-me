@@ -10,9 +10,10 @@
 #  price_range :integer
 #  created_at  :datetime
 #  updated_at  :datetime
+#  sale_id     :integer
 #
 
 class Item <ActiveRecord::Base
-    attr_accessible :title, :condition, :description, :image, :price_range
-    belongs_to :sales
+    attr_accessible :title, :condition, :description, :image, :price_range, :sale_id
+    belongs_to :sale
 end

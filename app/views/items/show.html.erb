@@ -4,8 +4,8 @@
 <p><%= @item.description %></p>
 <p><%= @item.price_range %></p>
 
-<%= link_to 'Add another item', new_item_path(@item), :class => "additem" %>
-<%= link_to 'View Listed Items', item_path(@item), :class => "view" %>
+<%= link_to 'Add another item', new_item_path, :class => "additem" %>
+<%= link_to 'View Listed Items', sale_path(@item.sale), :class => "view" %>
 </div>
 
 

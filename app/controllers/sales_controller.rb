@@ -21,13 +21,12 @@ class SalesController < ApplicationController
   end
 
   def search
-    @sales = Sale.all
   end
 
   def result 
     if params[:search].present?  
-      @sales = Sale.near(params[:suburb], 50,
-      :order => :distance)  
+      g= Geocoder.coordinates(params[:search])
+      @sales = Sale.near([g[0], g[1]], 1, :units => :km)
     else  
       @sales = Sale.all  
     end  

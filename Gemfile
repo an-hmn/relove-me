@@ -53,8 +53,8 @@ gem 'bcrypt', '~> 3.1.7'
 # For geolocation stuff
 gem 'geocoder'
 # For location weather
-gem 'yahoo_weatherman'
-gem 'weather-api'
+# gem 'yahoo_weatherman'
+# gem 'weather-api'
 
 # Use unicorn as the app server
 # gem 'unicorn'
