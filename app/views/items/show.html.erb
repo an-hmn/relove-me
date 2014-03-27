@@ -1,8 +1,11 @@
-
-<p><%= @item.title %></p>
+<div id="itemshow">
+<h2><%= @item.title %></h2>
 <p><%= @item.condition %></p>
 <p><%= @item.description %></p>
 <p><%= @item.price_range %></p>
 
-<%= link_to 'Add another item', new_item_path(@item) %>
-<%= link_to 'View Listed Items', item_path(@item) %>
+<%= link_to 'Add another item', new_item_path(@item), :class => "additem" %>
+<%= link_to 'View Listed Items', item_path(@item), :class => "view" %>
+</div>
+
+

@@ -1,9 +1,9 @@
 <h1><%= @sale.suburb %></h1>
 
 <div id="saleinfo">
-<p>Start time: <%= @sale.start_time %></p>
-<p>Finish time: <%= @sale.finish_time %></p>
-<p>Date: <%= @sale.date %></p>
+<p>Start time: <%= @sale.start_time.strftime('%H %M %P') %></p>
+<p>Finish time: <%= @sale.finish_time.strftime('%H %M %P') %></p>
+<p>Date: <%= @sale.date.strftime('%d/%m/%y') %></p>
 <p>Street Number: <%= @sale.street_number %></p>
 <p>Street Name: <%= @sale.street_name %></p>
 <p>Suburb: <%= @sale.suburb %></p>
@@ -14,10 +14,8 @@
 </div>
 
 <div id="links">
-<%= link_to 'Back', sales_path(@sale) %>
-<%= link_to 'View Listed Items', items_path(@item) %>
+<%= link_to 'Back', sales_path(@sale), :class => "back" %>
+<%= link_to 'View Listed Items', items_path(@item), :class => "view" %>
 </div>
-
-
 
 
