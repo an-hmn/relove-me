@@ -15,7 +15,9 @@ Key features include:
 The initial idea was to create an online community for people who wanted to either post their own garage sale or just search for a garage sale they may want to check out themselves. This needed three models in the database, Item, Sale and User. The relationships being....
 
 User - has_many :sales, has_many :items, :through => :sales
+
 Item - belongs_to :sale
+
 Sale - has_many :items, belongs_to :user
 
  create_table "items", force: true do |t|
