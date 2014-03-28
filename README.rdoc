@@ -12,21 +12,18 @@ Key features include:
 
 ==== Concept
 
-The initial idea was to create an online community for people who wanted to either post their own garage sale or just search for a garage sale they may want to check out themselves. This needed three models in the database, Item, Sale and User. The relationships being 
+The initial idea was to create an online community for people who wanted to either post their own garage sale or just search for a garage sale they may want to check out themselves. This needed three models in the database, Item, Sale and User. The relationships being....
 
-The problem being solved is allowing sellers to reach out to people online rather than posters around surround suburbs or lost in an all classifieds site such as gumtree. This is a direct connection to garage sales so it is easier to pinpoint what the user is after.
+User - has_many :sales, has_many :items, :through => :sales
+Item - belongs_to :sale
+Sale - has_many :items, belongs_to :user
+
+The problem being solved is allowing sellers to reach out to people online rather than posters around surrounding suburbs or lost in an all classifieds site such as gumtree. This is a direct connection to garage sales so it is easier to pinpoint what the user is after.
 
 I am using the Geocoder API for the search function and the Bcrypt gem for user signup/login.
   
-  
+The framework is a simple CRUD system that allows the user to create a sale and an item list, update their listed sales and items and also remove a sale that has passed and any items they wish to delete from the list.
 
-
-This needs a how and why of what they wanted to solve, how they built, problems, tech used.
-This file should include the elements of your project plan.
-
-This needs a how and why of what they wanted to solve, how they built, problems, tech used.
-
-This file should include the elements of your project plan.
 
 Add your list of resources, research, and documentation links to this file.
 https://www.draw.io/#Dproject_one.xml
@@ -35,7 +32,8 @@ http://frozen-springs-5700.herokuapp.com/
 
 ==== Wishlist
 
-- Share sale on Facebook and Twitter
+- Share sales on Facebook and Twitter
 - When searching a suburb, also display a list of sales in surrounding suburbs
 - Weather API
 - Checklist function for the user who is organising a garage sale (a to-do list)
+- STYLING
