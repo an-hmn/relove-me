@@ -16,7 +16,7 @@
 <div id="items">
 	<ul>
 		<% @sale.items.each do |item| %>
-		<li><%= item.title %>, <%= item.description %>, <%= item.condition %>, <%= item.price_range %> <%= link_to('Edit', edit_item_path(@item), :class => "edit" ) %> <%= link_to('Delete', item_delete_path(@item), :class => "delete" ) %></li>
+		<li><%= item.title %>, <%= item.description %>, <%= item.condition %>, <%= item.price_range %> <%= link_to('Edit', edit_item_path(item), :class => "edit" ) %> <%= link_to('Delete', item_delete_path(item), :class => "delete", :method => :delete ) %></li>
 		<% end %>
 	</ul>
 </div>

@@ -26,12 +26,13 @@ class Sale <ActiveRecord::Base
 	has_many :items
 	belongs_to :user
 
-	geocoded_by :address
-    after_validation :geocode, :if => :address_changed?
-
+	geocoded_by :suburb
+    after_validation :geocode, :if => :suburb_changed?
 
   	def address
   		"#{street_number} #{street_name} #{suburb} #{state}"
   	end
+
+
 end
 

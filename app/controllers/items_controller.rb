@@ -23,12 +23,12 @@ class ItemsController < ApplicationController
   def update
     item = Item.find params[:id]
     item.update_attributes params[:item]
-    redirect_to item
+    redirect_to sale_path(item.sale_id)
   end
 
   def destroy
     item = Item.find params[:id]
     item.destroy
-    redirect_to items_path
+    redirect_to sale_path(item.sale_id)
   end
 end

@@ -9,7 +9,7 @@ ReloveMe::Application.routes.draw do
   get '/result' => 'sales#result'
   get '/sales/:id/delete' => 'sales#destroy', :as => :sale_delete
   post '/sales/:id' => 'sales#update'
-  # get '/items/:id' => 'items#show'
+  delete '/items/:id' => 'items#destroy', :as => :item_delete
   resources :users, :items, :sales, :pages
 end
 

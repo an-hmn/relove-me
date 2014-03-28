@@ -9,6 +9,8 @@ class SalesController < ApplicationController
 
   def create
     sale = Sale.create(params[:sale])
+    sale.user_id = @current_user.id
+    sale.save
     redirect_to new_item_path
   end
 
