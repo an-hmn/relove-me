@@ -1,9 +1,7 @@
 <div id="sales">
 	<% @sales.each do |sale| %>
 	  <p>
-	    <%= link_to(sale.suburb, sale_path(sale.id), :class => "suburb") %> 
-	    <%= link_to('Edit', edit_sale_path(sale.id), :class => "edit" ) %>
-	    <%= link_to('Delete', sale_delete_path(sale.id), :class => "delete") %>
+		<%= link_to(sale.suburb, sale_path(sale.id), :class => "suburb") %> 
 	  </p>
 	<% end %>
 </div>

@@ -16,13 +16,16 @@
 <div id="items">
 	<ul>
 		<% @sale.items.each do |item| %>
-		<li><%= item.title %>, <%= item.description %></li>
+		<li><%= item.title %>, <%= item.description %>, <%= item.condition %>, <%= item.price_range %> <%= link_to('Edit', edit_item_path(@item), :class => "edit" ) %> <%= link_to('Delete', item_delete_path(@item), :class => "delete" ) %></li>
 		<% end %>
 	</ul>
 </div>
 
 <div id="links">
-<%= link_to 'Back', sales_path(@sale), :class => "back" %>
+	<%= link_to('Add More Items', new_item_path(@sale), :class => "more" ) %>
+	<%= link_to('Edit', edit_sale_path(@sale), :class => "edit" ) %>
+	<%= link_to('Delete', sale_delete_path(@sale), :class => "delete" ) %>
+	<%= link_to('Back', sales_path(@sale), :class => "back" ) %>
 </div>
 
 

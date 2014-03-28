@@ -1,3 +1,5 @@
+
+
 html {
   background: url("/images/gs_back.jpg") no-repeat center center fixed;  
  -webkit-background-size: cover;
@@ -115,9 +117,10 @@ nav ul li a:hover {
 
 .signup label {
   display: block;
-  margin-top: 3em;
+  margin-top: 1em;
   color: white;
 }
+
 
 .login {
   padding-bottom: 2em;
@@ -155,6 +158,10 @@ nav ul li a:hover {
 }
 
 #itemshow p {
+  color: white;
+}
+
+#items {
   color: white;
 }
 
