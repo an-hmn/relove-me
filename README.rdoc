@@ -84,4 +84,5 @@ http://frozen-springs-5700.herokuapp.com/
 - Weather API
 - Checklist function for the user who is organising a garage sale (a to-do list)
 - Create a custom 404 error page
+- Make it responsive
 - STYLING
