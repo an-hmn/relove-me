@@ -11,12 +11,17 @@ Key features include:
 
 
 ==== Concept
+
+The initial idea was to create an online community for people who wanted to either post their own garage sale or search for a garage sale they may want to check out themselves. 
+
+The problem being solved is allowing sellers to reach out to people online rather than posters around surround suburbs or lost in an all classifieds site such as gumtree. This is a direct connection to garage sales so it is easier to pinpoint what the user is after.
+
+I am using the Geocoder API for the search function and the Bcrypt gem for user signup/login.
   
   
-  
-  
-  README.md Projects need a readme file in markdown explaining their project. Explain your concept and
-data model. What problem are you solving? What gems and/or APIs are you using?
+
+
+https://www.draw.io/#Dproject_one.xml
 
 This needs a how and why of what they wanted to solve, how they built, problems, tech used.
 
