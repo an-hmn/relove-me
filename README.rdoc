@@ -1,28 +1,28 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+= Welcome to Relove Me!
 
-Things you may want to cover:
+Relove Me is a online community where you can advertise your garage sale for free and also find garage sales around you or anywhere in Australia!
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Key features include:
+- Tell everyone when and where your sale will take place
+- If you would like, list the items you will have on sale to reach out to further interested customers
+- When searching, view a map that will tell you how to get there
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+==== Concept
+  
+  
+  
+  
+  README.md Projects need a readme file in markdown explaining their project. Explain your concept and
+data model. What problem are you solving? What gems and/or APIs are you using?
+
+This needs a how and why of what they wanted to solve, how they built, problems, tech used.
+
+This file should include the elements of your project plan.
+
+Add your list of resources, research, and documentation links to this file.
+
+
+
