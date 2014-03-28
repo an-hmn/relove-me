@@ -18,6 +18,51 @@ User - has_many :sales, has_many :items, :through => :sales
 Item - belongs_to :sale
 Sale - has_many :items, belongs_to :user
 
+ create_table "items", force: true do |t|
+    t.string   "title"
+    t.string   "condition"
+    t.text     "description"
+    t.text     "image"
+    t.integer  "price_range"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "sale_id"
+  end
+
+  create_table "sales", force: true do |t|
+    t.time     "start_time"
+    t.time     "finish_time"
+    t.date     "date"
+    t.integer  "price_range"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "street_number"
+    t.string   "street_name"
+    t.string   "suburb"
+    t.string   "state"
+    t.integer  "post_code"
+    t.integer  "phone_number"
+    t.string   "address"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.integer  "user_id"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email_address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "password_digest"
+    t.text     "address"
+    t.float    "latitude"
+    t.float    "longitude"
+  end
+
+end
+
+
 The problem being solved is allowing sellers to reach out to people online rather than posters around surrounding suburbs or lost in an all classifieds site such as gumtree. This is a direct connection to garage sales so it is easier to pinpoint what the user is after.
 
 I am using the Geocoder API for the search function and the Bcrypt gem for user signup/login.
