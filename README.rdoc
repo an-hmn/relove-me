@@ -2,4 +2,25 @@
 
 = Welcome to Relove Me!
 
-===== blah blah
+Relove Me is a online community where you can advertise your garage sale for free and also find garage sales around you or anywhere in Australia!
+
+Key features include:
+  - Tell everyone when and where your sale will take place
+  - If you would like, list the items you will have on sale to reach out to further interested customers
+  - When searching, view a map that will tell you how to get there
+  
+  
+  
+  
+  
+  README.md Projects need a readme file in markdown explaining their project. Explain your concept and
+data model. What problem are you solving? What gems and/or APIs are you using?
+
+This needs a how and why of what they wanted to solve, how they built, problems, tech used.
+
+This file should include the elements of your project plan.
+
+Add your list of resources, research, and documentation links to this file.
+
+
+
