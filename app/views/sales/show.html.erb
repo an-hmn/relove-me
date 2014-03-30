@@ -11,6 +11,7 @@
 <p>Post Code: <%= @sale.post_code %></p>
 <p>Contact seller on: <%= @sale.phone_number %></p>
 <p>Price range: <%= @sale.price_range %></p>
+<p><%= link_to('Edit Sale', edit_sale_path(@sale)) %></p>
 </div>
 
 <div id="items">
