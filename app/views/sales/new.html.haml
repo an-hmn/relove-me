@@ -1,25 +1,2 @@
-%section.signup
-  = form_for @sale do |f|
-    = f.label :start_time
-    = f.time_field :start_time, :autofocus => true
-    = f.label :finish_time
-    = f.time_field :finish_time, :autofocus => true
-    = f.label :date
-    = f.date_field :date
-    = f.label :street_number
-    = f.text_field :street_number
-    = f.label :street_name
-    = f.text_field :street_name
-    = f.label :suburb
-    = f.text_field :suburb
-    = f.label :state
-    = f.text_field :state
-    = f.label :post_code
-    = f.text_field :post_code
-    = f.label :phone_number
-    = f.text_field :phone_number
-    = f.label :price_range
-    = f.text_field :price_range
-
-    = f.submit
+= render 'form'
 

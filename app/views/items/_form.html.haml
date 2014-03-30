@@ -1,0 +1,15 @@
+%section.itemlist
+  = form_for @item do |f|
+    = f.label :sale_id
+    = select_tag 'item[sale_id]', options_from_collection_for_select(@current_user.sales, "id", "date")
+    = f.label :title
+    = f.text_field :title, :autofocus => true
+    = f.label :condition
+    = f.text_field :condition, :autofocus => true
+    = f.label :description
+    = f.text_area :description
+    = f.label :price_range
+    = f.text_field :price_range
+
+
+    = f.submit
